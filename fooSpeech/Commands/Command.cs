@@ -18,7 +18,7 @@ namespace fooSpeech.Commands
         public String CommandText
         {
             get { return command; }
-            private set { command = value; }
+            protected set { command = value; }
         }
 
         private Uri uri;
