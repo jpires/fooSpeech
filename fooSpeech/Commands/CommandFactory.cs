@@ -7,7 +7,7 @@ namespace fooSpeech.Commands
 {
     static class CommandFactory
     {
-        private static Command[] commands = {new Play(), new Stop(), new VolumeDown(), new VolumeUp()};
+        private static Command[] commands = {new Play(), new Stop(), new VolumeDown(), new VolumeUp(), new NextMusic()};
 
 
         public static Command Contruct(String command)
