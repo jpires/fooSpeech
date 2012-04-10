@@ -61,7 +61,9 @@
     <Compile Include="Album.cs" />
     <Compile Include="Artist.cs" />
     <Compile Include="ASREngine.cs" />
+    <Compile Include="Commands\Continue.cs" />
     <Compile Include="Commands\NextMusic.cs" />
+    <Compile Include="Commands\Pause.cs" />
     <Compile Include="Commands\PreviousMusic.cs" />
     <Compile Include="Commands\VolumeDown.cs" />
     <Compile Include="Commands\Command.cs" />
