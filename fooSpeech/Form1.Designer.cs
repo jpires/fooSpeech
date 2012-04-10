@@ -1,4 +1,4 @@
-﻿namespace httpFoo
+﻿namespace fooSpeech
 {
     partial class Form1
     {

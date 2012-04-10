@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Diagnostics.Contracts;
 
-namespace httpFoo
+namespace fooSpeech
 {
     class Album
     {

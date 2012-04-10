@@ -61,10 +61,12 @@
     <Compile Include="Album.cs" />
     <Compile Include="Artist.cs" />
     <Compile Include="ASREngine.cs" />
+    <Compile Include="Commands\VolumeDown.cs" />
     <Compile Include="Commands\Command.cs" />
     <Compile Include="Commands\CommandFactory.cs" />
     <Compile Include="Commands\Play.cs" />
     <Compile Include="Commands\Stop.cs" />
+    <Compile Include="Commands\VolumeUp.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

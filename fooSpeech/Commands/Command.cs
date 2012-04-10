@@ -6,7 +6,7 @@ using CodeScales.Http;
 using CodeScales.Http.Entity;
 using CodeScales.Http.Methods;
 
-namespace httpFoo.Commands
+namespace fooSpeech.Commands
 {
     abstract class Command
     {
@@ -28,7 +28,7 @@ namespace httpFoo.Commands
         public Uri Uri
         {
             get { return uri; }
-            private set { uri = value; }
+            protected set { uri = value; }
         }
 
         private Result result;
@@ -52,6 +52,11 @@ namespace httpFoo.Commands
         /// <summary>
         /// Executes the command
         /// </summary>
-        abstract public void Execute();
+        public void Execute()
+        {
+            HttpClient cli = new HttpClient();
+            HttpGet get = new HttpGet(Uri);
+            HttpResponse resp = cli.Execute(get);
+        }
     }
 }
