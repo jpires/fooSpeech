@@ -28,6 +28,7 @@ namespace fooSpeech
             asr.Register(new Stop());
             asr.Register(new VolumeDown());
             asr.Register(new VolumeUp());
+            asr.Register(new NextMusic());
             asr.Begin();
         }
 
