@@ -34,33 +34,5 @@ namespace fooSpeech
             asr.Register(new Continue());
             asr.Begin();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            HttpClient cli = new HttpClient();
-            HttpGet get = new HttpGet(new Uri("http://localhost:8888/ajquery/?cmd=Start&param1="));
-            HttpResponse resp = cli.Execute(get);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            HttpClient cli = new HttpClient();
-            HttpGet get = new HttpGet(new Uri("http://localhost:8888/ajquery/?cmd=SearchMediaLibrary&param1=massive&param3=NoResponse"));
-            //HttpGet get = new HttpGet(new Uri("http://www.google.com"));
-            HttpResponse resp = cli.Execute(get);
-            get = new HttpGet(new Uri("http://localhost:8888/ajquery/?cmd=SwitchPlaylist&&param1=5&param3=NoResponse"));
-            resp = cli.Execute(get);
-
-            get = new HttpGet(new Uri("http://localhost:8888/ajquery/?cmd=Start&param1=0&param3=NoResponse"));
-            resp = cli.Execute(get);
-
-
-            MessageBox.Show(resp.ResponseCode.ToString());
-            MessageBox.Show(EntityUtils.ToString(resp.Entity));
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-        }
     }
 }
